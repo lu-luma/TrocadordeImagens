@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="342dp"
+        android:layout_height="336dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/meninas" />
+
+    <Button
+        android:id="@+id/btnDocinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Docinho"
+        app:backgroundTint="#00E676"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFlorzinha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFlorzinha"
+        app:layout_constraintTop_toTopOf="@+id/btnFlorzinha"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnLindinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="Lindinha"
+        app:backgroundTint="#6B9FF6"
+        app:layout_constraintEnd_toStartOf="@+id/btnFlorzinha"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <Button
+        android:id="@+id/btnFlorzinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Florzinha"
+        app:backgroundTint="#F1506F"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLindinha"
+        app:layout_constraintEnd_toStartOf="@+id/btnDocinho"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLindinha"
+        app:layout_constraintTop_toTopOf="@+id/btnLindinha"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
